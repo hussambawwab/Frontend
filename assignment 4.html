@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      section {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="asd">
+      <label for="username"> Username</label>
+      <input
+        type="text"
+        placeholder="username"
+        id="username"
+        name="username"
+        maxlength="20"
+      />
+
+      <br />
+      <br />
+
+      <label> Email</label>
+      <input type="email" placeholder="Email" name="email" />
+
+      <br />
+      <br />
+      <label for="birthDate">Birth date</label>
+      <input type="date" name="birthDate" id="birthDate" />
+      <br />
+      <br />
+
+      <label for="registrationDatetime">Registration datetime</label>
+      <input
+        type="datetime-local"
+        name="registrationDatetime"
+        id="registrationDatetime"
+      />
+      <br />
+      <br />
+      <label>Age </label>
+      <input type="number" placeholder="Age" min="0" name="age" />
+      <br />
+      <br />
+      <label> Password</label>
+      <input type="password" placeholder="New password" name="password" />
+
+      <br />
+      <br />
+
+      <label for="file"> Upload profile picture</label>
+      <input type="file" name="file" id="file" accept="image/*" />
+
+      <br />
+      <br />
+      <label>Courses :</label>
+      <br />
+
+      <input type="checkbox" name="accept" />
+      <label>Css</label>
+      <input type="checkbox" name="accept" />
+      <label>Html</label>
+      <input type="checkbox" name="accept" />
+      <label>Javascript</label>
+      <br />
+      <br />
+
+      <input type="radio" name="gender" value="Male" />
+      <label> Male</label>
+
+      <input type="radio" name="gender" value="Female" />
+      <label> Female</label>
+
+      <br />
+      <br />
+      <textarea placeholder="Note" rows="6" name="note"></textarea>
+
+      <br />
+      <br />
+      <label >Dropdown list</label>
+      <select  name="select">
+        <option disabled selected>--select course--</option>
+
+        <optgroup label="Frontend">
+          <option value="html">HTML</option>
+          <option value="Css">Css</option>
+          <option value="javascript">Javascript</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+          <option value="html">C#</option>
+          <option value="Css">Java</option>
+          <option value="javascript">.Net</option>
+        </optgroup>
+       
+      </select>
+
+      <br />
+      <br />
+
+      <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+      <br />
+      <br />
+      <input value="Signup" type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
